@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_telmgr"
+            style="@style/HomeTextView"
+            android:drawableTop="@drawable/icon_telmgr"
+            android:text="电话助手" />
+
+        <TextView
+            android:id="@+id/tv_softmgr"
+            style="@style/HomeTextView"
+            android:drawableTop="@drawable/icon_softmgr"
+            android:text="软件信息" />
+
+        <TextView
+            android:id="@+id/tv_sdclean"
+            style="@style/HomeTextView"
+            android:drawableTop="@drawable/icon_sdclean"
+            android:text="手机清理" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_rocket"
+            style="@style/HomeTextView"
+            android:drawableTop="@drawable/icon_rocket"
+            android:text="手机加速" />
+
+        <TextView
+            android:id="@+id/tv_phonemgr"
+            style="@style/HomeTextView"
+            android:drawableTop="@drawable/icon_phonemgr"
+            android:text="手机状态" />
+
+        <TextView
+            android:id="@+id/tv_filemgr"
+            style="@style/HomeTextView"
+            android:drawableTop="@drawable/icon_filemgr"
+            android:text="文件管理" />
+    </LinearLayout>
+
+</LinearLayout>

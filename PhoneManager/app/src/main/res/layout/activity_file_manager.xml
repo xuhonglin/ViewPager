@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_file_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhuoxin.phone.activity.FileManagerActivity">
+
+    <com.zhuoxin.phone.view.ActionBarView
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.zhuoxin.phone.view.ActionBarView>
+
+    <TextView
+        android:id="@+id/tv_file_manager"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/piechartBackgroundColor"
+        android:gravity="center"
+        android:text="已发现：1.0G"
+        android:textColor="#fff"
+        android:textSize="40sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    style="@style/FileManagerLeftItem"
+                    android:text="所有文件" />
+
+                <ProgressBar
+                    android:id="@+id/pb_anyFile"
+                    style="@style/FileManagerRightItem" />
+
+                <ImageView
+                    android:id="@+id/iv_anyFile"
+                    style="@style/FileManagerRightItem"
+                    android:src="@drawable/item_arrow_right"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    style="@style/FileManagerLeftItem"
+                    android:text="文档文件" />
+
+                <ProgressBar
+                    android:id="@+id/pb_txtFile"
+                    style="@style/FileManagerRightItem" />
+
+                <ImageView
+                    android:id="@+id/iv_txtFile"
+                    style="@style/FileManagerRightItem"
+                    android:src="@drawable/item_arrow_right"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    style="@style/FileManagerLeftItem"
+                    android:text="视频文件" />
+
+                <ProgressBar
+                    android:id="@+id/pb_videoFile"
+                    style="@style/FileManagerRightItem" />
+
+                <ImageView
+                    android:id="@+id/iv_videoFile"
+                    style="@style/FileManagerRightItem"
+                    android:src="@drawable/item_arrow_right"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    style="@style/FileManagerLeftItem"
+                    android:text="音频文件" />
+
+                <ProgressBar
+                    android:id="@+id/pb_audioFile"
+                    style="@style/FileManagerRightItem" />
+
+                <ImageView
+                    android:id="@+id/iv_audioFile"
+                    style="@style/FileManagerRightItem"
+                    android:src="@drawable/item_arrow_right"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    style="@style/FileManagerLeftItem"
+                    android:text="图像文件" />
+
+                <ProgressBar
+                    android:id="@+id/pb_imageFile"
+                    style="@style/FileManagerRightItem" />
+
+                <ImageView
+                    android:id="@+id/iv_imageFile"
+                    style="@style/FileManagerRightItem"
+                    android:src="@drawable/item_arrow_right"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    style="@style/FileManagerLeftItem"
+                    android:text="压缩文件" />
+
+                <ProgressBar
+                    android:id="@+id/pb_zipFile"
+                    style="@style/FileManagerRightItem" />
+
+                <ImageView
+                    android:id="@+id/iv_zipFile"
+                    style="@style/FileManagerRightItem"
+                    android:src="@drawable/item_arrow_right"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    style="@style/FileManagerLeftItem"
+                    android:text="apk文件" />
+
+                <ProgressBar
+                    android:id="@+id/pb_apkFile"
+                    style="@style/FileManagerRightItem" />
+
+                <ImageView
+                    android:id="@+id/iv_apkFile"
+                    style="@style/FileManagerRightItem"
+                    android:src="@drawable/item_arrow_right"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

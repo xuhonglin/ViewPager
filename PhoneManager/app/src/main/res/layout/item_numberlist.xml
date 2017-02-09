@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_telNumbername"
+        style="@style/ListItemTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:text="班级信息" />
+
+    <TextView
+        android:id="@+id/tv_telNumber"
+        style="@style/ListItemTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/item_margin"
+        android:text="10086" />
+
+</RelativeLayout>

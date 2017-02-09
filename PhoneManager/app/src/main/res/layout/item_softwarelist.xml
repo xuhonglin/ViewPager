@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cb_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/item_margin" />
+
+    <ImageView
+        android:id="@+id/iv_appicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/item_margin"
+        android:layout_marginStart="@dimen/item_margin"
+        android:layout_marginTop="@dimen/item_margin"
+        android:layout_toEndOf="@id/cb_delete"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_appname"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_appicon"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:layout_toEndOf="@id/iv_appicon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="微信"
+        android:textSize="@dimen/item_textsize" />
+
+    <TextView
+        android:id="@+id/tv_appversion"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/iv_appicon"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="6.0.0"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_packageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_appicon"
+        android:layout_marginLeft="@dimen/item_margin"
+        android:layout_toEndOf="@id/iv_appicon"
+        android:text="第三方"
+        android:textSize="12sp" />
+</RelativeLayout>

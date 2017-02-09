@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cb_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/item_margin"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/iv_fileicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/item_margin"
+        android:layout_toEndOf="@id/cb_file"
+        android:src="@drawable/item_arrow_right" />
+
+    <TextView
+        android:id="@+id/tv_filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_fileicon"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:layout_toEndOf="@id/iv_fileicon"
+        android:ellipsize="middle"
+        android:lines="1"
+        android:text="文件名"
+        android:textSize="@dimen/item_textsize" />
+
+    <TextView
+        android:id="@+id/tv_filetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_fileicon"
+        android:layout_toEndOf="@id/iv_fileicon"
+        android:text="文件类型" />
+</RelativeLayout>

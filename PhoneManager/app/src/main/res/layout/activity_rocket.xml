@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rocket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhuoxin.phone.activity.RocketActivity">
+
+    <com.zhuoxin.phone.view.ActionBarView
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.zhuoxin.phone.view.ActionBarView>
+
+    <TextView
+        android:id="@+id/tv_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/item_margin"
+        android:text="品牌"
+        android:textSize="@dimen/item_textsize" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="android 6.0"
+        android:textSize="15sp" />
+
+    <ProgressBar
+        android:id="@+id/pb_rocket"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:layout_marginStart="@dimen/item_margin"
+        android:max="100"
+        android:progress="30"
+        android:progressDrawable="@drawable/progress_softmgr" />
+
+    <TextView
+        android:id="@+id/tv_rocket_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:gravity="end"
+        android:text="剩余空间：1.5G/2.0G"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ProgressBar
+            android:id="@+id/pb_rocket_loading"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true" />
+
+        <ListView
+            android:id="@+id/lv_rocket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_rocket"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_margin="5dp"
+        android:background="@drawable/selector_button"
+        android:text="一键清理"
+        android:textColor="#fff"
+        android:textSize="@dimen/item_textsize" />
+
+</LinearLayout>

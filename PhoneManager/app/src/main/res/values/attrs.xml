@@ -1,0 +1,10 @@
+<resources>
+    <attr name="piechartBackgroundColor" format="color"></attr>
+    <attr name="piechartColor" format="color"></attr>
+    <attr name="piechartAngle" format="integer"></attr>
+    <declare-styleable name="PiechartView">
+        <attr name="piechartBackgroundColor"></attr>
+        <attr name="piechartColor"></attr>
+        <attr name="piechartAngle"></attr>
+    </declare-styleable>
+</resources>

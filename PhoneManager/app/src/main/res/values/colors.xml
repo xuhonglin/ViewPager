@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bluePrimaryColor">#2196f3</color>
+    <color name="darkBluePrimaryColor">#1976D2</color>
+    <color name="dividerColor">#b9b3b3</color>
+    <!--图表颜色-->
+    <color name="piechartBackgroundColor">#64d3ae</color>
+    <color name="piechartColor">#57b0f7</color>
+</resources>
